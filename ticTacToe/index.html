@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+  <title>Tic Tac Toe</title>
+  <link href="ticTacToe.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src='ticTacToe.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js'></script>
+  <div id="board">
+    <div class="row">
+      <div class="square" id="0-0"></div>
+      <div class="square" id="0-1"></div>
+      <div class="square" id="0-2"></div>
+    </div>
+    <div class="row">
+      <div class="square" id="1-0"></div>
+      <div class="square" id="1-1"></div>
+      <div class="square" id="1-2"></div>
+    </div>
+    <div class="row">
+      <div class="square" id="2-0"></div>
+      <div class="square" id="2-1"></div>
+      <div class="square" id="2-2"></div>
+    </div>
+  </div>
+
+  <script>
+  var game = new TTT.Game();
+  game.clickHandlers();
+  </script>
+</body>

@@ -1,0 +1,18 @@
+.game {
+  height: 250px;
+  width: 250px;
+}
+
+.game div {
+  height: 10px;
+  width: 10px;
+  background-color: yellow;
+  float: left;
+}
+
+.game div.snake {
+  height: 10px;
+  width: 10px;
+  background-color: red;
+  float: left;
+}
