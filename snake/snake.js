@@ -7,6 +7,17 @@
     this.segments.push(new Coord(0,0));
   };
 
+	var Apple - SnakeGame.Apple = function (board) {
+		this.board = board;
+	}
+	
+	Apple.prototype.replace = function() {
+		var x = Math.floor(Math.random() * 25);
+		var y = Math.floor(Math.random() * 25);
+		
+		this.position = new Coord(x,y);
+	}
+
   Snake.prototype.move = function () {
     var new_seg = this.segments.slice(-1)[0].plus(this.dir);
 
@@ -57,6 +68,8 @@
       divs[coord.y][coord.x].toggleClass('snake');
       console.log(divs[coord.y][coord.x]);
     });
+		
+	
 
     // var boardString = "<pre>";
 //     for (var i = 24; i >=0; i--) {

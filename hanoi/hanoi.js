@@ -1,12 +1,6 @@
 (function (root) {
   var Hanoi = root.Hanoi = (root.Hanoi || {});
 
-  // var readline = require('readline');
-  // var READER = readline.createInterface({
-  //   input: process.stdin,
-  //   output: process.stdout
-  // });
-
   var Game = Hanoi.Game = function () {
     this.towers = [[3, 2, 1], [], []];
   };
@@ -99,37 +93,4 @@
     });
   };
 
-  // Game.prototype.run = function () {
-  //   var game = this;
-  //
-  //   READER.question("Enter a starting tower: ",function (start) {
-  //     var startTowerIdx = parseInt(start);
-  //     READER.question("Enter an ending tower: ", function (end) {
-  //       var endTowerIdx = parseInt(end);
-  //       game.takeTurn(startTowerIdx,endTowerIdx);
-  //     });
-  //   });
-  // };
-  //
-  // Game.prototype.takeTurn = function (start,end){
-  //   var game = this;
-  //
-  //   if (game.move(start,end)) {
-  //     console.log(game.towers);
-  //   } else {
-  //     console.log("Invalid move!")
-  //   }
-  //
-  //   if (game.isWon()) {
-  //     console.log("You win!");
-  //     READER.close();
-  //   } else {
-  //     game.run();
-  //   }
-  // }
 })(this);
-
-// this.Hanoi.Game is a constructor function, so we instantiate a new object, then run it.
-
-// var Game = new this.Hanoi.Game();
-// Game.run();
